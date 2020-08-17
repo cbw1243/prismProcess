@@ -13,5 +13,5 @@ Note: You can expected to download the data on your own. No R codes are needed.
 
 The original PRISM data are at daily basis and are at 800m resolution (see [here](http://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf)). The downloaded data (from the PRISM database via FTP) should be zipped file, and each zipped file contains data for temperature/precipitation in a day. What the R codes are doing here is to unzip the data (so you do not have to unzip them manually) and then aggregate the grid-cell level data to the county level. The aggregation follow the procedures described in [Seong and Gramig (2019)](https://www.mdpi.com/2306-5729/4/2/66). 
 
-To obtain the aggregated precipitation data, you should run the codes in *precipitation_daily_extract.r* (in the codes folder). To obtain the aggregated degree day data, you should run the codes in *temperature_daily_extract.r* (in the codes folder). These codes will apply parallel computing and perform the aggregation efficiently. 
+To obtain the aggregated precipitation data, you should run the codes in `precipitation_daily_extract.r` (in the codes folder). To obtain the aggregated degree day data, you should run the codes in `temperature_daily_extract.r` (in the codes folder). These codes will apply parallel computing and perform the aggregation efficiently. 
 
