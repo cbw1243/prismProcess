@@ -1,15 +1,11 @@
 # Process the PRISM weather data 
 The R codes process the PRISM weather data and generate county-level growing season variables (i.e., degree days and precipitation). It takes two steps to complete the process. 
 
-We use the R code under the './CRPEval/codes/getData/PRISM_DATA_PROCESS/' folder to obtain and process the weather data. 
-
-contains the codes that download and aggregate the daily weather data from the PRISM database. The weather data that we use consist of precipitation ("ppt"), maximum temperature ("tmax"), and minimum temperature ("tmin").  
-
 ## Step 1. Download the weather data from PRISM   
 
 The raw weather data are from the [PRISM Climate Group](http://www.prism.oregonstate.edu/) of the Oregon State University. You can follow the instructions provided at the PRISM webiste [(here)](http://prism.oregonstate.edu/documents/PRISM_downloads_FTP.pdf) and use the FTP service to download the historical daily weather data from PRISM. You need to download data for three variables: precipitation ("ppt"), maximum temperature ("tmax"), and minimum temperature ("tmin").  
 
-Caution: The PRISM updated the precipitation data on June 30, 2015 (see the announcement [here](http://www.prism.oregonstate.edu/whatsnew/) ). The "ppt" folder contains the updated precipitation data, and these are the data that we have downloaded and used for our empirical analyses. You might also see the "ppt_old_method" folder, which contains the out-dated precipitation data. We did **NOT** the out-dated precipitation data. 
+Caution: The PRISM updated the precipitation data on June 30, 2015 (see the announcement [here](http://www.prism.oregonstate.edu/whatsnew/) ). The "ppt" folder contains the updated precipitation data, and these are the data that you should download. You might also see the "ppt_old_method" folder, which contains the out-dated precipitation data. 
 
 Note: You can expected to download the data on your own. No R codes are needed.    
 
